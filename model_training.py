@@ -11,7 +11,7 @@ import glob
 
 
 app = Flask(__name__)
-app.config['MONGO_URI'] = "mongodb+srv://gptmodelmdbuser:bKJeEwjnzjMHFJ4G@dev-coredb.3stdb.mongodb.net/gptmodelmdb?retryWrites=true&w=majority"
+app.config['MONGO_URI'] = ""
 mongo = PyMongo(app)
 openai.api_key = os.environ.get('OPENAI_API_KEY', None)
 
